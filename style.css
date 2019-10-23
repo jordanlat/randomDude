@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Baloo Bhai', cursive;
+    src: url(assets/fonts/BalooBhai-Regular.ttf);
+    font-family: 'Raleway', sans-serif;
+    src: url(assets/fonts/Raleway-Bold.ttf);
+}
+
+
+/* -- Global -- */
+.flexCenter{
+    display: flex;
+    justify-content: center;
+}
+
+/* -- Fin Global -- */
+
+/*-----------------------------------------------*/
+
+/* --  Header -- */
+.titre h1 {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 8vh;
+}
+/* -- Fin Header -- */
+
+/*-----------------------------------------------*/
+
+/* -- Main -- */
+.intro {
+    font-family: 'Raleway', sans-serif;
+}
+.intro h2 {
+    font-size: 6vh;
+}
+.intro p {
+    font-size: 2vh;
+}
+.divButton button{
+    font-size: 6vh;
+    border-radius: 50%;
+    height: 5em;
+    width: 5em;
+}
+
+/* -- Fin Main -- */
+
+/*-----------------------------------------------*/
+
+/* -- Footer -- */
+
+/* -- Fin Footer -- */
