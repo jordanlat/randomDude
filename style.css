@@ -10,6 +10,7 @@
 .flexCenter{
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 /* -- Fin Global -- */
@@ -20,6 +21,7 @@
 .titre h1 {
     font-family: 'Baloo Bhai', cursive;
     font-size: 8vh;
+    text-align: center;
 }
 /* -- Fin Header -- */
 
@@ -31,15 +33,17 @@
 }
 .intro h2 {
     font-size: 6vh;
+    text-align: center;
 }
 .intro p {
     font-size: 2vh;
+    text-align: center;
 }
 .divButton button{
     font-size: 6vh;
     border-radius: 50%;
-    height: 5em;
-    width: 5em;
+    height: 20vh;
+    width: 20vh;
 }
 
 /* -- Fin Main -- */
