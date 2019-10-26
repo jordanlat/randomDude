@@ -45,6 +45,9 @@
     height: 20vh;
     width: 20vh;
 }
+#content {
+    text-align: center;
+}
 
 /* -- Fin Main -- */
 
