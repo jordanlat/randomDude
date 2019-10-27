@@ -7,6 +7,10 @@
 
 
 /* -- Global -- */
+body {
+    color: white;
+    background-color: black;
+}
 .flexCenter{
     display: flex;
     justify-content: center;
@@ -19,7 +23,7 @@
 
 /* --  Header -- */
 header {
-    background-color: blue;
+    /*background-color: blue;*/
 }
 .titre h1 {
     font-family: 'Baloo Bhai', cursive;
@@ -32,7 +36,7 @@ header {
 
 /* -- Main -- */
 main {
-    background-color: darkcyan;
+    /*background-color: darkcyan;*/
     width: 80%;
     margin: auto;
     padding-bottom: 2%;
@@ -58,8 +62,10 @@ main {
     border-radius: 50%;
     height: 5em;
     width: 5em;
-    box-shadow: 0px 0px 23px 6px;
+    box-shadow: 0px 0px 23px 6px rgba(255,255,255,1);;
     border: none;
+    font-weight: bold;
+    outline: none;
 }
 button:hover {
     transform: scale(1.1);
@@ -71,7 +77,7 @@ button:active {
     text-align: center;
     width: 40%;
     margin: auto;
-    background-color:green;
+    /*background-color:green;*/
 }
 #content h3 {
     font-size: 160%;
@@ -87,7 +93,7 @@ button:active {
 
 /* -- Footer -- */
 footer {
-    background-color: brown;
+    /*background-color: brown;*/
     padding: auto;
 }
 
