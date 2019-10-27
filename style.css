@@ -35,7 +35,6 @@ main {
     background-color: darkcyan;
     width: 80%;
     margin: auto;
-    padding-top: 1vh;
     padding-bottom: 2%;
 }
 .intro {
@@ -74,9 +73,11 @@ button:active {
     margin: auto;
     background-color:green;
 }
-
+#content h3 {
+    font-size: 160%;
+}
 .prenom {
-    font-size: 150%;
+    font-size: 120%;
     padding-bottom: 2%;
 }
 
@@ -87,10 +88,7 @@ button:active {
 /* -- Footer -- */
 footer {
     background-color: brown;
-    margin-top:  4%;
     padding: auto;
-    display: flex;
-    justify-content: center;
 }
 
 /* -- Fin Footer -- */
