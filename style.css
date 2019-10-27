@@ -9,7 +9,9 @@
 /* -- Global -- */
 body {
     color: white;
-    background-color: black;
+    background-image: url(assets/img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .flexCenter{
     display: flex;
