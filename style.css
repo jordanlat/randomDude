@@ -12,6 +12,9 @@
     justify-content: center;
     text-align: center;
 }
+body {
+    background-color: blue;
+}
 
 /* -- Fin Global -- */
 
@@ -28,6 +31,9 @@
 /*-----------------------------------------------*/
 
 /* -- Main -- */
+main {
+    background-color: darkcyan;
+}
 .intro {
     font-family: 'Raleway', sans-serif;
 }
@@ -47,6 +53,8 @@
 }
 #content {
     text-align: center;
+    margin: 0em 34em 0em 34em;
+    background-color: cornsilk;
 }
 
 /* -- Fin Main -- */
