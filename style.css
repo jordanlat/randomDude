@@ -8,10 +8,8 @@
 
 /* -- Global -- */
 body {
+    background-color: black;
     color: white;
-    background-image: url(assets/img/bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 .flexCenter{
     display: flex;
@@ -84,8 +82,9 @@ button:active {
 #content h3 {
     font-size: 160%;
 }
-.prenom {
-    font-size: 120%;
+#content p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 150%;
     padding-bottom: 2%;
 }
 

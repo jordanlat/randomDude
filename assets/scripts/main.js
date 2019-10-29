@@ -33,20 +33,28 @@ function mixingPeople() {
             if(checkArray[rNumber]==false){
                 numberDiv++;
                 if(numberDiv%2 == 1){
+                    //ajout Id
+                    let createId = document.createElement("div");
+                    createId.setAttribute("id", "group"+numberDiv);
+                    //document.getElementById('content').setAttribute("id","SomeID"+i);
                     let createHr = document.createElement("hr");
                     let createH3 = document.createElement("h3");
                     let createGrpName = document.createTextNode("Groupe n° "+(Math.floor(numberDiv/2)+1));
                     createH3.appendChild(createGrpName);
-                    document.getElementById('content').appendChild(createHr);
-                    document.getElementById('content').appendChild(createH3);
+                    document.getElementById('content').appendChild(createId);
+                    document.getElementById("group"+numberDiv).appendChild(createHr);
+                    document.getElementById("group"+numberDiv).appendChild(createH3);
                 }
+                /*
                 let createDiv = document.createElement("div");
                 createDiv.classList.add('prenom');
+                */
+                console.log(Math.floor(numberDiv/2)+1);
+                let createP = document.createElement("p"+numberDiv);
                 let divContent = document.createTextNode(elevesArray[rNumber]);
-                createDiv.appendChild(divContent);
-                document.getElementById("content").appendChild(createDiv);
+                createP.appendChild(divContent);
+                document.getElementById("content").appendChild(createP);
                 checkArray[rNumber]=true;
-
             }
         }
         numBoolRCounter+=1;
