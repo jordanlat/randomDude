@@ -1,11 +1,11 @@
 function execMixingPeople(){
-    if(document.getElementsByClassName('prenom').length==0){
+    let getDiv = document.getElementById("content");
+    let list = getDiv.getElementsByTagName("p");
+    //document.getElementById("content").innerHTML = list.length;
+    if(list.length == 0){
         mixingPeople();
     }
 }
-
-
-
 function mixingPeople() {
     //On crée deux tableau, le premier contient les prénoms au format text,
     let elevesArray =
@@ -36,7 +36,6 @@ function mixingPeople() {
                     //ajout Id
                     let createId = document.createElement("div");
                     createId.setAttribute("id", "group"+numberDiv);
-                    //document.getElementById('content').setAttribute("id","SomeID"+i);
                     let createHr = document.createElement("hr");
                     let createH3 = document.createElement("h3");
                     let createGrpName = document.createTextNode("Groupe n° "+(Math.floor(numberDiv/2)+1));
@@ -45,12 +44,8 @@ function mixingPeople() {
                     document.getElementById("group"+numberDiv).appendChild(createHr);
                     document.getElementById("group"+numberDiv).appendChild(createH3);
                 }
-                /*
-                let createDiv = document.createElement("div");
-                createDiv.classList.add('prenom');
-                */
-                console.log(Math.floor(numberDiv/2)+1);
-                let createP = document.createElement("p"+numberDiv);
+               //console.log(Math.floor(numberDiv/2)+1);
+                let createP = document.createElement("p");
                 let divContent = document.createTextNode(elevesArray[rNumber]);
                 createP.appendChild(divContent);
                 document.getElementById("content").appendChild(createP);
