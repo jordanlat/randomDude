@@ -21,6 +21,7 @@ function mixingPeople() {
      Florent=false,Cindy=false,Jeremy=false,Naïm=false,Eleve1=false,Eleve2=false,Eleve3=false,
      Eleve4=false,Joker=false];
 
+/*
     let numBoolRCounter = 0; //variable pour compter le nombre de bool à vrai.
     let numberDiv = 0; //variable pour compter le nombre de Div.
 
@@ -44,7 +45,7 @@ function mixingPeople() {
                     document.getElementById("group"+numberDiv).appendChild(createHr);
                     document.getElementById("group"+numberDiv).appendChild(createH3);
                 }
-               //console.log(Math.floor(numberDiv/2)+1);
+                console.log("group"+numberDiv);
                 let createP = document.createElement("p");
                 let divContent = document.createTextNode(elevesArray[rNumber]);
                 createP.appendChild(divContent);
@@ -54,4 +55,24 @@ function mixingPeople() {
         }
         numBoolRCounter+=1;
     }
+*/
+
+    function getRandomName () {
+        let rNumber = Math.floor(Math.random()*(elevesArray.length));
+    }
+    function createDiv (x) {
+        /*
+            Je veux créer une fonction qui va créer une Div id="group"+numero de groupe.
+            Dans cette div id je veux un h2 et 2 p classe = numeros d'apparition
+        */
+        let nP = 0; // Le nombre de p créer
+        let addDiv = document.createElement('div');
+        addDiv.classList.add("group"+x);
+        let addTitle = document.createElement("h3");
+        addTitle.classList.add("Groupe "+x);
+
+        let addP = document.createElement("p");
+        addP.setAttribute("id",nP);
+    }
+
 }
