@@ -1,0 +1,79 @@
+/* -- Global -- */
+@font-face {
+    font-family: 'Baloo Bhai', cursive;
+    src: url(assets/fonts/BalooBhai-Regular.ttf);
+    font-family: 'Raleway', sans-serif;
+    src: url(assets/fonts/Raleway-Bold.ttf);
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* -- Header -- */
+header {
+    background-color: red;
+}
+
+header h1 {
+    background-color: violet;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 15vh;
+}
+header h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+
+
+/* -- Main -- */
+main {
+    background-color: blue;
+}
+.group {
+    background-color: tomato;
+}
+.group p {
+    background-color: greenyellow;
+}
+.bp {
+    display: flex;
+    justify-content: center;
+}
+button{
+    font-size: 6vh;
+    border-radius: 50%;
+    height: 5em;
+    width: 5em;
+    box-shadow: 0px 0px 23px 6px rgba(255,255,255,1);;
+    border: none;
+    font-weight: bold;
+    outline: none;
+}
+button:hover {
+    transform: scale(1.1);
+}
+button:active {
+    transform: scale(0.8);
+}
+#list h3,p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 8vh;
+}
+
+
+/* -- Footer -- */
+footer {
+    background-color: yellow;
+}
+

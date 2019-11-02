@@ -6,7 +6,7 @@ function tinder(){
     let newArray = [];
     for(let i=elevesArray.length;i>=0;i--){
         let rNumber = Math.floor(Math.random()*(elevesArray.length));
-        newArray.push(elevesArray[rNumber]);console.log(i+newArray);
+        newArray.push(elevesArray[rNumber]);
         let suppr = elevesArray.indexOf(elevesArray[rNumber]);
         elevesArray.splice(suppr,1);  
     }
@@ -41,7 +41,6 @@ function tinder(){
     addStructure();
     function insertNameIntoP(){
         for(let i=0; i<newArray.length;i++){
-            //console.log(document.getElementById("group"+i).length)
             document.getElementById("group"+i).innerHTML="";
             let target = document.getElementById("group"+i).innerHTML;
             let update = target.replace("",newArray[i]);
