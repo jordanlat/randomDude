@@ -20,7 +20,7 @@ body {
 /* -- Header -- */
 header {
     background-color: red;
-    height: 35vh;
+    height: 25vh;
     width: 100vw;
 }
 
@@ -52,6 +52,7 @@ main {
     background-color: tomato;
     border-radius: 10px;
     margin-bottom: 20vh;
+    box-shadow: 0px 0px 12px 0px
 }
 .group p {
     background-color: greenyellow;
