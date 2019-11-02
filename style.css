@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: black;
-    color: white;
+    /*background-color: black;*/
+    /*color: white;*/
 }
 .flexCenter{
     display: flex;
@@ -19,13 +19,13 @@ body {
 
 /* -- Header -- */
 header {
-    background-color: red;
+    /*background-color: red;*/
     height: 25vh;
     width: 100vw;
 }
 
 header h1 {
-    background-color: violet;
+    /*background-color: violet;*/
     text-align: center;
     margin-bottom: 0;
     font-family: 'Baloo Bhai', cursive;
@@ -34,28 +34,32 @@ header h1 {
 header h2 {
     text-align: center;
     margin-top: 0;
+    border: 1px solid;
+    width: 10em;
+    margin: auto;
 }
 #intro hr {
-    height: 4px;
+    height: 1px;
     margin: 0;
     width: 150vh;
-    background-color: blanchedalmond;
+    background: grey;
+    /*background-color: blanchedalmond;*/
     margin: 6vh auto 7vh auto;
 }
 
 
 /* -- Main -- */
 main {
-    background-color: blue;
+    /*background-color: blue;*/
 }
 .group {
-    background-color: tomato;
+    /*background-color: tomato;*/
     border-radius: 10px;
     margin-bottom: 20vh;
     box-shadow: 0px 0px 12px 0px
 }
 .group p {
-    background-color: greenyellow;
+    /*background-color: greenyellow;*/
 }
 .bp {
     display: flex;
@@ -89,6 +93,6 @@ button:active {
 
 /* -- Footer -- */
 footer {
-    background-color: yellow;
+    /*background-color: yellow;*/
 }
 
