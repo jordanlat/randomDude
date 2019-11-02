@@ -22,6 +22,7 @@ header {
     /*background-color: red;*/
     height: 25vh;
     width: 100vw;
+    margin-bottom: 10vh;
 }
 
 header h1 {
@@ -30,19 +31,19 @@ header h1 {
     margin-bottom: 0;
     font-family: 'Baloo Bhai', cursive;
     font-size: 15vh;
+    margin-top: 1vh;
 }
 header h2 {
     text-align: center;
-    margin-top: 0;
     border: 1px solid;
     width: 10em;
-    margin: auto;
+    margin: 0 auto auto auto;
 }
 #intro hr {
     height: 1px;
     margin: 0;
     width: 150vh;
-    background: grey;
+    background: rgb(68, 66, 66);
     /*background-color: blanchedalmond;*/
     margin: 6vh auto 7vh auto;
 }
@@ -74,6 +75,10 @@ button{
     border: none;
     font-weight: bold;
     outline: none;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: 3px solid;
+    margin-top: 1vh;
 }
 button:hover {
     transform: scale(1.1);

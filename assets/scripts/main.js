@@ -7,7 +7,7 @@ function tinder(){
     let newArray = [];
     //Si le tableau est impaire, alors j'ajoute joker
     if(elevesArray.length%2==1){elevesArray.push("Joker");}
-
+/* -- Function createNewArray -- */
     for(let i=elevesArray.length;i>=0;i--){
         let rNumber = Math.floor(Math.random()*(elevesArray.length));
         newArray.push(elevesArray[rNumber]);
