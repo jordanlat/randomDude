@@ -20,6 +20,8 @@ body {
 /* -- Header -- */
 header {
     background-color: red;
+    height: 35vh;
+    width: 100vw;
 }
 
 header h1 {
@@ -33,7 +35,13 @@ header h2 {
     text-align: center;
     margin-top: 0;
 }
-
+#intro hr {
+    height: 4px;
+    margin: 0;
+    width: 150vh;
+    background-color: blanchedalmond;
+    margin: 6vh auto 7vh auto;
+}
 
 
 /* -- Main -- */
@@ -42,6 +50,8 @@ main {
 }
 .group {
     background-color: tomato;
+    border-radius: 10px;
+    margin-bottom: 20vh;
 }
 .group p {
     background-color: greenyellow;
@@ -65,6 +75,10 @@ button:hover {
 }
 button:active {
     transform: scale(0.8);
+}
+#list {
+    width: 60vw;
+    margin: 6vh auto 7vh auto;
 }
 #list h3,p{
     font-family: 'Raleway', sans-serif;

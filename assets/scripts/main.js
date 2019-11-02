@@ -14,6 +14,12 @@ function tinder(){
         let halfClass = Math.floor(newArray.length/2);
         let nbrP = 0;
         let n = 1;
+
+        let getList = document.getElementById('intro');
+        let addHR = document.createElement("hr");
+        //addHR.classList.add("flexCenter");
+        getList.appendChild(addHR);
+        
         if(document.getElementsByClassName("group").length==0){
             for (let i=0;i<halfClass;i++){
                 
