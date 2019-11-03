@@ -67,12 +67,29 @@ let backToTopBP  = document.getElementById('scrollTop');
 window.onscroll = function() {this.hideSeek();}
 function hideSeek(){
     let scrollStatus = document.documentElement.scrollTop;
-    console.log(scrollStatus);
+    /*console.log(scrollStatus);*/
     if(scrollStatus > 700){
         backToTopBP.style.display = "block";
+        console.log("hein?!");
+
+        if(backToTopBP.style.display == "block"){
+            console.log("j'ai tendance à bloquer"); 
+            /*
+            backToTopBP.style.transition = "opacity 3s";
+            */
+           backToTopBP.style.display = "block";
+        }
+        /*
+
+
+        ----- objctv faire apparaitre le button smoothly ----
+
+        object.style.transition="property duration timing-function delay|initial|inherit"
+
         backToTopBP.style.transitionProperty = "display";
         backToTopBP.style.transitionDuration = "4s";
         backToTopBP.style.transitionDelay = "1s";
+        */
         /*
         transition-property: font-size;
         transition-duration: 4s;
@@ -80,6 +97,7 @@ function hideSeek(){
         */
     } else {
         backToTopBP.style.display = "none";
+        console.log("Je ne bloque plus, merci");
     }
 }
 
