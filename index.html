@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TCE</title>
     <link rel="stylesheet" href="style.css">
-    <script src="assets/scripts/main.js"></script>
 </head>
 <body>
     <header>
@@ -18,10 +17,13 @@
         <div class="mainContent flexCenter" id="intro">
             <h2>A button pressed, can change your life</h2>
             <div class="bp">
-                <button type="button" onclick="tinder()" >PRESS ME</button>
+                <button type="button" onclick="tinder()" id="pressMe" >PRESS ME</button>
             </div>
         </div>
         <div id="list" class="flexCenter"></div>
+        <div  id="scrollTop">
+            <button class="topBp" type="button" onclick="toTop()">Top</button>
+        </div>
     </main>
     <!-------------------------------------------------------->
     <footer>
@@ -30,4 +32,5 @@
         </div>
     </footer>
 </body>
+<script src="assets/scripts/main.js"></script>
 </html>

@@ -60,3 +60,30 @@ function tinder(){
             document.getElementById("group"+i).innerHTML = update;
         }
 }
+
+/* -- Scroll to Top BP -- */
+
+let backToTopBP  = document.getElementById('scrollTop');
+window.onscroll = function() {this.hideSeek();}
+function hideSeek(){
+    let scrollStatus = document.documentElement.scrollTop;
+    console.log(scrollStatus);
+    if(scrollStatus > 700){
+        backToTopBP.style.display = "block";
+        backToTopBP.style.transitionProperty = "display";
+        backToTopBP.style.transitionDuration = "4s";
+        backToTopBP.style.transitionDelay = "1s";
+        /*
+        transition-property: font-size;
+        transition-duration: 4s;
+        transition-delay: 2s;
+        */
+    } else {
+        backToTopBP.style.display = "none";
+    }
+}
+
+function toTop(){
+    /*document.body.scrollTop = 0;*/
+    document.documentElement.scrollTop = 0;
+}
