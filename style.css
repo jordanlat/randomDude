@@ -63,9 +63,10 @@ form p {
 }
 #nbrMate {
     font-size: 5vh;
-    margin: 0 auto 7vh auto;
+    margin: 0 auto 2vh auto;
     text-align: center;
     width: 10vw;
+
 }
 
 .group {
