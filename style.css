@@ -56,6 +56,18 @@ header h2 {
 main {
     /*background-color: blue;*/
 }
+
+form p {
+    font-size: 5vh;
+    margin-bottom: 0;
+}
+#nbrMate {
+    font-size: 5vh;
+    margin: 0 auto 7vh auto;
+    text-align: center;
+    width: 10vw;
+}
+
 .group {
     /*background-color: tomato;*/
     border-radius: 10px;
@@ -133,6 +145,7 @@ button:active {
     background-color: white;
     color: rgb(0, 0, 0);
     border: 1px solid;
+    opacity: 1;
     
 /*
     transition-property: opacity;

@@ -15,14 +15,20 @@
     <!-------------------------------------------------------->
     <main>
         <div class="mainContent flexCenter" id="intro">
-            <h2>A button pressed, can change your life</h2>
+            <h2><i>A button pressed, can change your life</i></h2>
+            <div class="nbrMate">
+                <form action="#">
+                    <p>Nombre de personne dans le groupe</p>
+                    <input type="number" name="nbrMate" id="nbrMate" required min="1" value="2">
+                </form>
+            </div>
             <div class="bp">
                 <button type="button" onclick="tinder()" id="pressMe" >PRESS ME</button>
             </div>
         </div>
         <div id="list" class="flexCenter"></div>
         <div  id="scrollTop">
-            <button class="topBp" type="button" onclick="toTop()">Top</button>
+            <button id="idTopBp" class="topBp" type="button" onclick="toTop()">Top</button>
         </div>
     </main>
     <!-------------------------------------------------------->
