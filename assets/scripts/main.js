@@ -26,7 +26,7 @@ function tinder(){
     }
 /* -- Function createStructure -- */
         // -- Je déclare mes variables, pour cette fonction --
-        let halfClass = Math.floor(newArray.length/2);
+        //let halfClass = Math.floor(newArray.length/2);
         let nbrP = 0;
         let grpCounter = 1;
         // -- J'ajoute une balise HR si elle n'existe pas --
@@ -125,3 +125,13 @@ function toTop(){
     /*document.body.scrollTop = 0;*/
     document.documentElement.scrollTop = 0;
 }
+
+/* //Tentative d'inclusion de donné dans le js
+document.getElementById("submit").addEventListener("click",
+function addName() {
+    let getValue = document.querySelector("#name").value;
+    console.log(getValue);
+    elevesArray.push(getValue);
+}
+);
+*/
