@@ -39,6 +39,7 @@ document.addEventListener("submit",function(e){
     if(name.match(char)){
         elevesArray.push(name);
         const addName = new createUL(name);
+        resetTextName();
     } else {
         return false;
     }
@@ -148,4 +149,7 @@ function teamExist(c){
         */
         console.log('REMOVE');
     }
+}
+function resetTextName(){
+    document.getElementById('inputName').value = '';
 }
