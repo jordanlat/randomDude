@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test Formulaire Dynamique</title>
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body onload="init()">
     <header>
@@ -15,11 +14,19 @@
     </header>
     <main>
         <div class="mainFrame">
-            <div class="button">
-                <button id="bpRandom">Let's Shuffle</button>
+            <div id="buttonRandom">
+                <form action="#" method="POST">
+                    <input type="button" id="bpRandom" name="nbrMate" value="Let's Shuffle">
+                    <br><label for="nbrMate">Number of people in one team: </label><br>
+                    <input type="number" type="text" name="nbrMate" id="nbrMate" min="1" value="2">
+                </form>
             </div>
             <div class="update">
-                <div id="list">
+                <div id="counter"></div>
+                <div class="olList">
+                    <ol id="list">
+
+                    </ol>
                     <!-- Ici main.js va ajouter la liste préfaite de prénom -->
                 </div>
                 <form action="#" method="post" id="form">
@@ -37,4 +44,5 @@
         <h5>Copyright Jordan LAT 2019</h5>
     </footer>    
 </body>
+<script src="assets/main.js"></script>
 </html>
