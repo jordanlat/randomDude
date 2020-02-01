@@ -4,6 +4,9 @@ let elevesArray =
 "Justin","Victoria","Kévin","Allan","Antonin","Luca.R","Luca.B","Medhi",
 "Nathan","Jordan","Erwan","Cindy","Jeremy","Naïm"];
 */
+/*
+Test
+*/
 let elevesArray =[];
 
 let tamponArray = [];
@@ -17,7 +20,7 @@ class createUL{
         const li = this.li;
         this.ahref = document.createElement('a');
         let textName = document.createTextNode(this.name);
-        
+
         this.ahref.appendChild(textName);
         this.li.id = this.name;
         this.ahref.href = "#";
@@ -29,7 +32,7 @@ class createUL{
         };
         this.li.appendChild(this.ahref);
         this.list.appendChild(this.li);
-        
+
     }
 }
 
@@ -66,7 +69,7 @@ function shuffle(){
         let rNumber = Math.floor(Math.random()*(tamponArray.length));
         newArray.push(tamponArray[rNumber]);
         let suppr = tamponArray.indexOf(tamponArray[rNumber]);
-        tamponArray.splice(suppr,1);  
+        tamponArray.splice(suppr,1);
     }
 }
 
@@ -89,7 +92,7 @@ const list = document.querySelector('#team');
 function popSkeleton(nbrPerTeam){
     for(let i = 0; i<Math.round(elevesArray.length/nbrPerTeam);i++){
         let numberMate = nbrPerTeam;
-        
+
         const newTeam = document.createElement('div');
         //console.log('list: '+list.children.length);
         newTeam.className = 'group';
@@ -127,7 +130,7 @@ function teamExist(c){
     if((list.childElementCount) === (Math.round(elevesArray.length/c))){
         //console.log(document.getElementsByClassName('group'));
         //const group = document.getElementsByClassName('group');
-        
+
         //console.log(document.querySelector('#team').removeChild(document.getElementsByTagName('group')));
         //document.getElementById('team').innerHTML = "";
         console.log('avant while: '+list.childElementCount);
@@ -135,7 +138,7 @@ function teamExist(c){
 
         while(list.childElementCount >1){
             document.querySelector('#Groupe'+i).remove();
-            
+
             console.log('list element count: '+list.childElementCount);
             console.log('which group: '+document.querySelector('#Groupe'+i));
             console.log(i);
@@ -148,7 +151,7 @@ function teamExist(c){
             console.log(document.querySelector('#Groupe'+i))
             console.log(i);
             document.querySelector('#Groupe'+i).remove();
-           
+
         }
         */
         console.log('REMOVE');
