@@ -1,0 +1,68 @@
+/*
+
+font-family: 'Roboto', sans-serif;
+
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body input {
+    font-size: 2vh;
+}
+
+header  {
+    text-align: center;
+    background-color: chartreuse;
+}
+header h1 {
+    font-weight: bold;
+    font-size: 10vh;
+}
+
+.mainFrame {
+    height: 75vh;
+    width: 97vw;
+    margin: auto;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: text-bottom;
+    align-items: center;
+
+}
+#buttonRandom {
+    background-color: chocolate;
+    display: flex;
+
+}
+#update {
+    background-color: darkblue;
+    display: flex;
+
+}
+
+footer {
+    text-align: center;
+    background-color: brown;
+}
+#team {
+    background-color: yellow;
+}
+label {
+    font-weight: bold;
+    font-size: 3vh;
+}
+.group {
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    */
+    margin: auto;
+}
+
+main {
+    border: solid 5px;
+}
