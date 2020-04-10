@@ -64,7 +64,7 @@
         isTeamExist();
         shuffle();
         popSkeleton(value);
-        insertMate();
+        insertMate(value);
     });
 
 /**
@@ -93,8 +93,10 @@
         createDiv.id = 'content_added';
         divTeam.appendChild(createDiv);
         const divContentAdded = document.querySelector('#content_added');
-
-        for (let i = 0; i < Math.round(elevesArray.length / nbrPerTeam); i++) {
+        
+        const nbrteam = Math.round(elevesArray.length / nbrPerTeam);
+        
+        for (let i = 0; i < nbrteam ; i++) {
             let numberMate = nbrPerTeam;
             const newTeam = document.createElement('div');
             newTeam.className = 'group';
@@ -111,6 +113,14 @@
                 counter++;
             }
         }
+
+        if((elevesArray.length / nbrPerTeam) % 1 ) {
+            const lastGrp = document.querySelector('#Groupe'+nbrteam);
+            const p = document.createElement('p');
+            p.id = 'mate' + (counter);
+            lastGrp.appendChild(p);
+        }
+
     }
 
     // Vérifie si une liste à été généré
@@ -124,7 +134,7 @@
     }
 
     // Insère les noms dans la structure HTML
-    function insertMate() {
+    function insertMate(nbrePeople) {
         for (let lol = 0; lol < elevesArray.length; lol++) {
             let id = document.querySelector('#mate' + lol);
             let mate = document.createTextNode(newArray[lol]);
