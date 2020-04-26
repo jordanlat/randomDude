@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Test Formulaire Dynamique</title>
     <link rel="stylesheet" href="assets/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
@@ -16,34 +17,36 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     
 </head>
-<body>
+<body style = background-image:url(assets/image1.jpeg)>
     <header>
         <h1 class="titre">Teamder</h1>
-        <h2 class="sousTitre">Press a button can change two life.</h2>
     </header>
     <main>
         <div class="mainFrame">
+            <div class="box1">
+                <div id="update">
+                    <div id="counter"></div>
+                    <form action="#" method="post" id="form">
+                        <label for="">Name List: </label><br>
+                        <input type="text" class="form-control" placeholder="Put the name here" id="inputName"autofocus aria-label="Put the name here" aria-describedby="bpAdd">
+                        <input type="submit" id="bpAdd" value="Add" class="btn btn-outline-light">
+                    </form>
+                    <br>
+                    <div class="olList">
+                        <ol id="list"></ol>
+                        <!-- Ici main.js va ajouter la liste préfaite de prénom -->
+                    </div>
+                </div>
             <div id="buttonRandom">
                 <form action="#" method="POST">
                     <br>
                     <label for="nbrMate">Number of people in one team: </label><br>
-                    <input type="number" type="text" name="nbrMate" id="nbrMate" min="1" value="2"><br>
-                    <input type="button" id="bpRandom" name="nbrMate" value="Let's Shuffle">
+                    <input type="number"  type="text" name="nbrMate" id="nbrMate" min="1" value="2"><br>
+                    <input type="button" id="bpRandom" name="nbrMate" value="Let's Shuffle" class="btn btn-outline-light">
                 </form>
             </div>
-            <div id="update">
-                <div id="counter"></div>
-                <form action="#" method="post" id="form">
-                    <label for="">Name List: </label><br>
-                    <input type="text" placeholder="Prénom" id="inputName" autofocus>
-                    <input type="submit" id="bpAdd" value="Add">
-                </form>
-                <br>
-            </div>
-            <div class="olList">
-                <ol id="list"></ol>
-                <!-- Ici main.js va ajouter la liste préfaite de prénom -->
-            </div>
+           
+        </div>
         </div>
         <div id='team'>
             <!-- Ici main.js va ajouter la nouvelle liste de prénom -->
